@@ -1,13 +1,35 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Projeto 06</title>
     <link rel="stylesheet" href="estilo.css">
-     <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
 </head>
+
 <body>
-    
+    <center>
+        <h1>Gerenciamento de Inventários</h1>
+        <input type="text" placeholder="Digite o código do item" id="caixa_pesquisa">
+        <button id="btn_pesquisar"> 🔎Pesquisar</button>
+    </center>
+
+    <center>
+        <br>
+        <img src="carregando.gif" id="carregando" height="80">
+    </center>
+
+    <div id="caixa_conteudo"></div>
+
+    <div id="btn_mais">➕</div>
+    <div id="tela_escura">
+        <div id="formulario_cadastro">
+            <button id="btn_fechar_form_cad">❌</button>
+        </div>
+    </div>
+
+    <script src="funcoes.js"></script>
 </body>
 </html>

@@ -1,0 +1,78 @@
+body {
+    font-family: Verdana, Geneva, Arial;
+}
+
+#caixa_pesquisa {
+    width: 400px;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+#btn_pesquisar {
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.cartoes {
+    box-shadow: 1px 1px 10px black;
+    width: 300px;
+    height: 150px;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.cartoes:hover {
+    background-color: gold;
+    scale: 1.1;
+    cursor: pointer;
+    transition: all 0.5s;
+}
+
+#caixa_conteudo {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+}
+
+#btn_mais {
+    width: 10px;
+    height: 10px;
+    background-color: lightskyblue;
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    padding: 30px;
+    border-radius: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: all 0.5s;
+}
+
+#btn_mais:hover {
+    background-color: gold;
+    scale: 1.1;
+}
+
+#tela_escura {
+    background-color: rgba(0, 0, 0, 0.35);
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    z-index: 1000;
+    left: 0px;
+    top: 0px;
+    backdrop-filter: blur(5px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#formulario_cadastro {
+    background-color: white;
+    width: 350px;
+    height: 350px;
+    border-radius: 10px;
+}
