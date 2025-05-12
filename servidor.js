@@ -18,8 +18,7 @@ app.get('/inventarios/:codigo', (req, res) => {
     const { codigo } = req.params;
     db.query('SELECT * FROM tb_inventarios WHERE codigo = ?', [codigo], (erro, resultado) => {
         if (erro) return res.json({ mensagem: "Falha ao consultar inventário"+erro.message });
-        if (resultado.length === 0) return res.status(404).json({ mensagem: "Inventário não encontrado" });
-        return res.json(resultado[0]);
+        return res.json(resultado);
     });
 });
 

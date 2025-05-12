@@ -26,10 +26,44 @@
     <div id="btn_mais">➕</div>
     <div id="tela_escura">
         <div id="formulario_cadastro">
-            <button id="btn_fechar_form_cad">❌</button>
+            <button id="btn_fechar_form_cad" style="margin-left: 90%;">❌
+            </button> <br>
+            <h1>Cadastrar item</h1>
+            Código: <input type="text" id="caixa_codigo"> <br><br>
+            Descrição: <input type="text" id="caixa_descricao"> <br><br>
+            Categoria: <input type="text" id="caixa_categoria"> <br><br>
+            Setor: <select id="caixa_setor">
+                <option>Selecione</option>
+                <option value="NAD">NAD</option>
+                <option value="NEP">NEP</option>
+                <option value="Administrativo">Administrativo</option>
+                <option value="Atendimento">Atendimento</option>
+                <option value="Suporte">Suporte</option>
+            </select> <br> <br>
+            <button id="btn_cadastrar">Cadastrar</button>
+        </div>
+
+        <div id="formulario_editar">
+            <button id="btn_fechar_form_editar" style="margin-left: 90%;">❌
+            </button> <br>
+            <h1>Editar/Deletar</h1>
+            Código: <input type="text" id="caixa_codigo2"> <br><br>
+            Descrição: <input type="text" id="caixa_descricao2"> <br><br>
+            Categoria: <input type="text" id="caixa_categoria2"> <br><br>
+            Setor: <select id="caixa_setor2">
+                <option>Selecione</option>
+                <option value="NAD">NAD</option>
+                <option value="NEP">NEP</option>
+                <option value="Administrativo">Administrativo</option>
+                <option value="Atendimento">Atendimento</option>
+                <option value="Suporte">Suporte</option>
+            </select> <br> <br>
+            <button id="btn_salvar">Salvar</button>
+            <button id="btn_deletar">Deletar</button>
         </div>
     </div>
 
     <script src="funcoes.js"></script>
 </body>
+
 </html>

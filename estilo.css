@@ -70,9 +70,11 @@ body {
     justify-content: center;
 }
 
-#formulario_cadastro {
+#formulario_cadastro,
+#formulario_editar {
     background-color: white;
-    width: 350px;
+    width: 300px;
     height: 350px;
     border-radius: 10px;
+    padding: 20px;
 }
